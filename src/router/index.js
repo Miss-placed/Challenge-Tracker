@@ -10,6 +10,11 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: '/form',
+      name: 'formView',
+      component: () => import('@/views/FormView.vue'),
+    },
+    {
       path: '/:game',
       name: 'gameView',
       component: () => import('@/views/GameView.vue'),
@@ -28,11 +33,6 @@ const router = createRouter({
       path: '/:game/:gamemode/:category/:subcategory',
       name: 'subcategoryView',
       component: () => import('@/views/SubcategoryView.vue'),
-    },
-    {
-      path: '/form',
-      name: 'formView',
-      component: () => import('@/views/FormView.vue'),
     },
   ],
 })
