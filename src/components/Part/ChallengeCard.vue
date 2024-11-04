@@ -57,7 +57,7 @@ const props = defineProps({
   },
   status: {
     type: String,
-    required: true,
+    required: false,
   },
   progress: {
     type: Number,
@@ -76,11 +76,9 @@ const statusText = computed(() => {
   display: flex;
   border: 1px solid #333;
   border-radius: 8px;
-  overflow: hidden;
   background-color: #1c1c1c;
   color: #ffffff;
-  width: 800px;
-  aspect-ratio: 4/1;
+  /* aspect-ratio: 4/1; */
   position: relative;
 }
 
